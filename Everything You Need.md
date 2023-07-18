@@ -1,4 +1,4 @@
-# My ceh practical notes
+![image](https://github.com/dhabaleshwar/CEHPractical/assets/132373212/53745d3c-c81a-4601-945a-4d410699eafa)# My ceh practical notes
 #  Scanning Networks (always do sudo su) --> To be root
 ```
 1- Nmap scan for alive/active hosts command for 192.189.19.18- nmap -A 192.189.19.0/24 or nmap -T4 -A ip
@@ -95,6 +95,16 @@ tcp.flags.syn == 1 and tcp.flags.ack == 0    (How many machines) or Go to statis
 tcp.flags.syn == 1   (Which machine for dos)
 http.request.method == POST   (for passwords) or click tools ---> credentials
 Also
+```
+# V12 Update
+```
+**Find FQDN**
+nmap -p389 –sV -iL <target_list>  or nmap -p389 –sV <target_IP> (Find the FQDN in a subnet/network)
+
+**Cracking Wifi Password**
+aircrack-ng [pcap file] (For cracking WEP network)
+aircrack-ng -a2 -b [Target BSSID] -w [password_Wordlist.txt] [WP2 PCAP file] (For cracking WPA2 or other networks through the captured .pcap file)
+
 ```
 #  Some extra work 
 ```
