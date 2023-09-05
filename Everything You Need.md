@@ -112,3 +112,30 @@ aircrack-ng -a2 -b [Target BSSID] -w [password_Wordlist.txt] [WP2 PCAP file] (Fo
 Check RDP enabled after getting ip- nmap -p 3389 -iL ip.txt | grep open (ip.txt contains all the alive hosts from target subnet)
 Check MySQL service running- nmap -p 3306 -iL ip.txt | grep open        (ip.txt contains all the alive hosts from target subnet)
 ```
+
+
+
+# Linux Privesc
+```
+sudo apt-get update
+sudo apt-get install nfs-kernel-server
+sudo nano /etc/exports
+![image](https://github.com/dhabaleshwar/CEHPractical/assets/133966450/990ad39f-3278-44cf-a6f1-f9631dbc2082)
+![image](https://github.com/dhabaleshwar/CEHPractical/assets/133966450/de267e52-2aee-4209-b59d-fade3156aa2f)
+
+burdan bashlayir
+![image](https://github.com/dhabaleshwar/CEHPractical/assets/133966450/04e12589-3c44-4692-b745-939812c1e5e0)
+
+showmount -e IP
+![image](https://github.com/dhabaleshwar/CEHPractical/assets/133966450/ab0bbcf0-48fb-469a-892a-8b466097b574)
+![image](https://github.com/dhabaleshwar/CEHPractical/assets/133966450/7acb64e8-84de-44c7-ae0b-e21c18590407)
+![image](https://github.com/dhabaleshwar/CEHPractical/assets/133966450/94406223-e427-437b-b5aa-096ecbb87f8b)
+![image](https://github.com/dhabaleshwar/CEHPractical/assets/133966450/efdbbb21-59a6-471c-bc6a-1ab1672b02c7)
+![image](https://github.com/dhabaleshwar/CEHPractical/assets/133966450/9b100e32-e09c-4421-bb28-8b72a0508e29)
+![image](https://github.com/dhabaleshwar/CEHPractical/assets/133966450/89bcdb04-0363-46bc-832a-8284d3ede071)
+![image](https://github.com/dhabaleshwar/CEHPractical/assets/133966450/bd2918b5-a98c-41b1-8edd-c5e08f7b43fd)
+
+```
+
+
+
